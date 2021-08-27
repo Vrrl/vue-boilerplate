@@ -1,0 +1,29 @@
+$max: 5;
+$offset: 0.2;
+$unit: 'rem';
+
+@mixin list-loop($className, $styleNames...) {
+    $i: 0;
+    @while $i <= $max {
+        #{$className + $i} { 
+            @for $index from 1 through length($styleNames){
+                #{nth($styleNames, $index)}: #{($i*$offset) + $unit}!important;
+            }
+        }
+        $i: $i + 1;
+    }
+}
+
+@include list-loop('.pl-', 'padding-left');
+@include list-loop('.pr-', 'padding-right');
+@include list-loop('.pt-', 'padding-top');
+@include list-loop('.pb-', 'padding-bottom');
+@include list-loop('.py-', 'padding-bottom','padding-top');
+@include list-loop('.px-', 'padding-left','padding-right');
+
+@include list-loop('.ml-', 'margin-left');
+@include list-loop('.mr-', 'margin-right');
+@include list-loop('.mt-', 'margin-top');
+@include list-loop('.mb-', 'margin-bottom');
+@include list-loop('.my-', 'margin-bottom','margin-top');
+@include list-loop('.mx-', 'margin-left','margin-right');

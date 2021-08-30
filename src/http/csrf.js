@@ -10,7 +10,6 @@
 //     return cookies;
 // }
 
-
 // export default {
 //     getToken(){
 //         if(getCookies()['XSRF-TOKEN']){

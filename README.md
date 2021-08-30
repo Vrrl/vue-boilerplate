@@ -2,11 +2,11 @@
 
 ### Content
 
-- Vue Bundle (Vuex, Vue Router)
-- Axios (Http client)
+- Vue Bundle ([Vuex](https://vuex.vuejs.org/), [Vue Router](https://router.vuejs.org/))
+- [Axios](https://github.com/axios/axios) (Http client)
 - ESLint, Babel & Prettier (code tools)
-- Sass-loader + fiber & Bulma CSS (Style)
-- chart.js + vue-chartjs (it can be removed)
+- Sass-loader + fiber & [Bulma CSS](https://bulma.io/) (Style)
+- [chart.js + vue-chartjs](https://vue-chartjs.org/) (it can be removed)
 - folders structure
 
 ## Project setup
